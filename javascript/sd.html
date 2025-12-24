@@ -1,43 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=<form onsubmit="return validateForm()">
-  <input type="text" id="name" placeholder="Name"><br><br>
-  <input type="email" id="email" placeholder="Email"><br><br>
-  <input type="password" id="password" placeholder="Password"><br><br>
-  <button>Submit</button>
-</form>
-
-<script>
-function validateForm() {
-  let name = document.getElementById("name").value;
-  let email = document.getElementById("email").value;
-  let password = document.getElementById("password").value;
-
-  if (name === "") {
-    alert("Name is required");
-    return false;
-  }
-
-  if (email === "") {
-    alert("Email is required");
-    return false;
-  }
-
-  if (password.length < 6) {
-    alert("Password must be 6 characters");
-    return false;
-  }
-
-  alert("Form Submitted Successfully");
-  return true;
-}
-</script>
-, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
 </head>
 <body>
-    
+  <input type="text" id="enter" placeholder="enter the name">
+  <button onclick="gaurav()">click</button>
+  <p id="show"></p>
+  <script>
+    function gaurav(){
+     let user = document.getElementById("enter").value;
+      document.getElementById("show").innerText = "name : "+user; 
+    }
+  </script>
+
+  <h1>change the text on click the function</h1>
+  <p id="change">gaurva</p>
+  <button type="button" onclick="showtext()">try</button>
+  <script>
+    function showtext(){
+      document.getElementById("change").innerHTML="Gaurav Uttam Barhate"
+    }
+  </script>
 </body>
 </html>
+
