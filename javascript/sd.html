@@ -24,6 +24,25 @@
       document.getElementById("change").innerHTML="Gaurav Uttam Barhate"
     }
   </script>
+
+  <h2 id="change1">gaurav</h2>
+  <button onclick="changetext()">click</button>
+  <script>
+    function changetext(){
+      document.getElementById("change1").innerHTML="Gaurav Barhate"
+    }
+  </script>
+
+
+<input type="text" id="change2" placeholder="enter name">
+<p id="showthename"></p>
+<button onclick="namess()">submit</button>
+<script>
+  function namess(){
+    let name= document.getElementById("change2").value;
+    document.getElementById("showthename").innerText="name :" + name;
+  }
+</script>
 </body>
 </html>
 
