@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -45,4 +45,25 @@
 </script>
 </body>
 </html>
+----->
 
+ <!DOCTYPE html>
+ <html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+ </head>
+ <body>
+  <input type="text" name="" id="marks" placeholder="enter the marks">
+  <button onclick="showresult()">click this button</button>
+  <p id="print"></p>
+  <script>
+    function showresult(){
+      let marks =document.getElementById("marks").value;
+      let result = (marks >= 35) ?"pass ": "file ";
+      document.getElementById("print").innerHTML="<h1> result  "+result+ "</h1>"
+    }
+  </script>
+ </body>
+ </html>
