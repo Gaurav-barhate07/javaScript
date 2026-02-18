@@ -1,0 +1,49 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<h2>Button click counter </h2>
+<p id="count">0</p>
+<button onclick="clickc()">click</button>
+<script>
+    let number= 0;
+
+    function clickc(){
+        number=number+1;
+        document.getElementById("count").innerText=number;
+    }
+</script>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Enter your name</h1>
+    <input type="text" id="nameinput" placeholder="enter your name">
+    <br><br>        
+    <button onclick="clickk()">click</button>
+    <br><br>  
+    <h3 id="result"></h3>
+      <button onclick="deletebtn()"> delete</button>
+    <script>
+        function clickk(){
+            let name = document.getElementById("nameinput").value;
+            document.getElementById("result").innerHTML="<i><h1>"+"hello : "+name+"</h1></i>";
+            Shadowdelete();
+        }
+        function Shadowdelete(){
+          alert("delete");
+        }
+    </script>
+</body>
+</html>

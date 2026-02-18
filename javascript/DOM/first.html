@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="class">my name </h1>
+    <button onclick="chagentext()">change</button>
+    <button onclick="remotext()">remove</button>
+    <script>
+        let changed = false;
+        function chagentext(){
+            document.getElementById("class").innerText ="my name is gaurav";
+            changed = true;
+        }
+        function remotext(){
+            if(!changed){
+                alert("please click the add button")
+            }
+            else{
+                document.getElementById("class").innerText="";
+            }
+        }
+    </script>
+</body>
+</html>
